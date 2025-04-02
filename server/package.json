@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+     "postinstall": "prisma generate",
+    "build": "PRISMA_CLI_BINARY_TARGETS=rhel-openssl-3.0.x prisma generate && next build"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.0.1",
