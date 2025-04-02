@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       domain={domain}
       clientId={clientId}
       authorizationParams={{
-        redirect_uri: window.location.origin,
+        redirect_uri: "https://homey-alpha.vercel.app",
         // Removed audience and scope since we're not using tokens
       }}
       useRefreshTokens={true}
