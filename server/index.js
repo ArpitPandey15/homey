@@ -16,7 +16,7 @@ const MONGO_URL = process.env.DATABASE_URL; // Ensure this is set in your .env f
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://localhost:5173",  // Update to match your frontend URL
+    origin: "https://homey-alpha.vercel.app",  // Update to match your frontend URL
     credentials: true,
 }));
 
